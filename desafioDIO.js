@@ -100,7 +100,7 @@ class Jogo {    // Classe que controla o jogo
                     let xpGanho = this.rolarDado(700, 1200);    // Gera uma quantidade aleatória de XP entre 7Feli00 e 1200
                     this.jogador.ganharXP(xpGanho);     // Aumenta o XP do jogador
                     console.log(this.jogador.nome + " derrotou o " + i + "° Goblin e ganhou " + xpGanho + " de XP!");
-                    console.log("XP total: " + this.jogador.xp + " | Classificação: " + this.jogador.obterClassificacao());
+                    console.log("O Héroi de nome " + this.jogador.nome + " está no nível de " + this.jogador.obterClassificacao());
                     console.log("----------------------------------------------------------------------------------");
                     break;  // Termina o combate contra este goblin e passa para o próximo
                 }
@@ -110,7 +110,7 @@ class Jogo {    // Classe que controla o jogo
 
             if (goblin.estaVivo()) {    // Condição de derrota
                 console.log(this.jogador.nome + " não foi forte o bastante...");
-                console.log("XP total: " + this.jogador.xp + " | Classificação: " + this.jogador.obterClassificacao());
+                console.log("O Héroi de nome " + this.jogador.nome + " está no nível de " + this.jogador.obterClassificacao());
                 console.log("----------------------------------------------------------------------------------");
                 break;  // Termina o jogo se o jogador for derrotado
             }
