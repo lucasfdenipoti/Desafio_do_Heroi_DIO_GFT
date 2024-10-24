@@ -8,17 +8,17 @@ class Jogador { // Classe que representa o jogador
     obterClassificacao() {  // Método que retorna a classificação do jogador com base no XP acumulado
         if (this.xp < 1000) {
             return "Ferro";
-        } else if (this.xp >= 1000 && this.xp < 2000) {
+        } else if (this.xp >= 1000 && this.xp <= 2000) {
             return "Bronze";
-        } else if (this.xp >= 2000 && this.xp < 5000) {
+        } else if (this.xp >= 2001 && this.xp <= 5000) {
             return "Prata";
-        } else if (this.xp >= 5000 && this.xp < 7000) {
+        } else if (this.xp >= 5001 && this.xp <= 7000) {
             return "Ouro";
-        } else if (this.xp >= 7000 && this.xp < 8000) {
+        } else if (this.xp >= 7001 && this.xp <= 8000) {
             return "Platina";
-        } else if (this.xp >= 8000 && this.xp < 9000) {
+        } else if (this.xp >= 8001 && this.xp <= 9000) {
             return "Ascendente";
-        } else if (this.xp >= 9000 && this.xp < 10000) {
+        } else if (this.xp >= 9001 && this.xp <= 10000) {
             return "Imortal";
         } else {
             return "Radiante";
