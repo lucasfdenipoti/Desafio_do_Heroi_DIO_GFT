@@ -128,5 +128,5 @@ readline.question('Digite o nome do jogador: ', nome => {
     let jogador = new Jogador(nome);    // Cria um novo jogador com o nome digitado
     let jogo = new Jogo(jogador);   // Inicia o jogo com o jogador criado
     jogo.iniciar(); // Inicia o jogo
-    readline.close();   // Fecha o input após o nome ser inserid
+    readline.close();   // Fecha o input após o nome ser inserido
 });
